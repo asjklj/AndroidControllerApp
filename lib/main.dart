@@ -1,3 +1,25 @@
+// import 'package:flutter/material.dart';
+// import './tabs/tabs.dart';
+// void main(){
+//   runApp(const MyApp());
+// }
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title:'桌上智能辅助空调控制盒app',
+//       theme:ThemeData(
+//         primarySwatch: Colors.blue,
+//       ),
+//       home: const Tabs(), 
+//       );
+//   }
+// }
+
+
+
 import 'package:flutter/material.dart';
 import './tabs/tabs.dart';
 import './route/MondayPage.dart';
@@ -31,7 +53,7 @@ class MyApp extends StatelessWidget {
           selectionColor: Colors.blueGrey,
         ),
         colorScheme: const ColorScheme.light(
-          primary: Color(0xFFF2F2F2),
+          primary: Color.fromARGB(255, 242, 242, 242),
           //secondary: Color(0xFFF4AE47),
           surface: Color(0xFFC4C4C4),
           background: Color(0xFFFFFFFF),
