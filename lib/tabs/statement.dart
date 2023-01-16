@@ -34,16 +34,18 @@ class _StatementState extends State<Statement> {
             height: 50,
             width: 50,
             decoration: BoxDecoration(
-              color: Color.fromARGB(255, 223, 240, 253),
-              border: Border.all(color: Colors.blue),
+              color: Color.fromARGB(255, 237, 243, 248),
+              border: Border.all(color: Color.fromARGB(255, 142, 189, 227)),
+
               image: DecorationImage(image: NetworkImage(""),fit: BoxFit.cover),
               // boxShadow: [BoxShadow(color: Colors.lightBlue, blurRadius: 20.0)],
               // gradient: LinearGradient(colors: [Colors.blue, Colors.white]),
               borderRadius: BorderRadius.all(Radius.circular(20.0)),
             ),
             child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-              const Text("偏好 :"),
+              const Text("偏好 :",style: TextStyle(color: Color.fromARGB(255, 44, 108, 161),fontSize: 20),),
               DropdownButton(
+                style: TextStyle(color:Color.fromARGB(255, 22, 72, 113),fontSize: 20),
                 value: SelectedValue[1],
                 items: const [
                   DropdownMenuItem(
@@ -62,6 +64,10 @@ class _StatementState extends State<Statement> {
                     value: 4,
                     child: Text("4"),
                   ),
+                  DropdownMenuItem(
+                    value: 5,
+                    child: Text("5"),
+                  ),
                 ],
                 onChanged: (value) {
                   SelectedValue[1] = value!;
@@ -76,29 +82,39 @@ class _StatementState extends State<Statement> {
             height: 50,
             width: 50,
             decoration: BoxDecoration(
-              color: Color.fromARGB(255, 223, 240, 253),
+                            color: Color.fromARGB(255, 237, 243, 248),
               image: DecorationImage(image: NetworkImage(""),fit: BoxFit.cover),
-              border: Border.all(color: Colors.blue),
+               border: Border.all(color: Color.fromARGB(255, 142, 189, 227)),
+
               // boxShadow: [BoxShadow(color: Colors.lightBlue, blurRadius: 20.0)],
               // gradient: LinearGradient(colors: [Colors.blue, Colors.white]),
               borderRadius: BorderRadius.all(Radius.circular(20.0)),
             ),
             child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-              const Text("模式 :"),
+              const Text("模式 :",style: TextStyle(color: Color.fromARGB(255, 44, 108, 161),fontSize: 20),),
               DropdownButton(
+                style: TextStyle(color:Color.fromARGB(255, 22, 72, 113),fontSize: 20),
                 value: SelectedValue[2],
                 items: const [
                   DropdownMenuItem(
                     value: 1,
-                    child: Text("1"),
+                    child: Text("制冷"),
                   ),
                   DropdownMenuItem(
                     value: 2,
-                    child: Text("2"),
+                    child: Text("送风"),
                   ),
                   DropdownMenuItem(
                     value: 3,
-                    child: Text("3"),
+                    child: Text("制热"),
+                  ),
+                  DropdownMenuItem(
+                    value: 4,
+                    child: Text("除湿"),
+                  ),
+                   DropdownMenuItem(
+                    value: 5,
+                    child: Text("自动"),
                   ),
                 ],
                 onChanged: (value) {
@@ -114,16 +130,17 @@ class _StatementState extends State<Statement> {
             height: 50,
             width: 50,
             decoration: BoxDecoration(
-              color: Color.fromARGB(255, 223, 240, 253),
-              border: Border.all(color: Colors.blue),
+              color: Color.fromARGB(255, 237, 243, 248),
+              border: Border.all(color: Color.fromARGB(255, 142, 189, 227)),
               image: DecorationImage(image: NetworkImage("https://www.iconfinder.com/icons/9025042/wind_weather_icon"),fit: BoxFit.cover),
               // boxShadow: [BoxShadow(color: Colors.lightBlue, blurRadius: 20.0)],
               // gradient: LinearGradient(colors: [Colors.blue, Colors.white]),
               borderRadius: BorderRadius.all(Radius.circular(20.0)),
             ),
             child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-              const Text("风速 :"),
+              const Text("风速 :",style: TextStyle(color: Color.fromARGB(255, 44, 108, 161),fontSize: 20),),
               DropdownButton(
+                style: TextStyle(color:Color.fromARGB(255, 22, 72, 113),fontSize: 20),
                 value: SelectedValue[3],
                 items: const [
                   DropdownMenuItem(
@@ -153,45 +170,54 @@ class _StatementState extends State<Statement> {
             height: 50,
             width: 50,
             decoration: BoxDecoration(
-              color: Color.fromARGB(255, 223, 240, 253),
+              color: Color.fromARGB(255, 237, 243, 248),
               image: DecorationImage(image: NetworkImage(""),fit: BoxFit.cover),
-              border: Border.all(color: Colors.blue),
+              border: Border.all(color: Color.fromARGB(255, 142, 189, 227)),
               // boxShadow: [BoxShadow(color: Colors.lightBlue, blurRadius: 20.0)],
               // gradient: LinearGradient(colors: [Colors.blue, Colors.white]),
               borderRadius: BorderRadius.all(Radius.circular(20.0)),
             ),
             child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-              const Text("温度 :"),
+              const Text("温度 :",style: TextStyle(color: Color.fromARGB(255, 44, 108, 161),fontSize: 20),),
               DropdownButton(
+                style: TextStyle(color:Color.fromARGB(255, 22, 72, 113),fontSize: 20),
                 value: SelectedValue[4],
                 items: const [
                   DropdownMenuItem(
                     value: 20,
-                    child: Text("20"),
+                    child: Text("20℃"),
                   ),
                   DropdownMenuItem(
                     value: 21,
-                    child: Text("21"),
+                    child: Text("21℃"),
                   ),
                   DropdownMenuItem(
                     value: 22,
-                    child: Text("22"),
+                    child: Text("22℃"),
                   ),
                   DropdownMenuItem(
                     value: 23,
-                    child: Text("23"),
+                    child: Text("23℃"),
                   ),
                   DropdownMenuItem(
                     value: 24,
-                    child: Text("24"),
+                    child: Text("24℃"),
                   ),
                   DropdownMenuItem(
                     value: 25,
-                    child: Text("25"),
+                    child: Text("25℃"),
                   ),
                   DropdownMenuItem(
                     value: 26,
-                    child: Text("26"),
+                    child: Text("26℃"),
+                  ),
+                  DropdownMenuItem(
+                    value: 27,
+                    child: Text("27℃"),
+                  ),
+                  DropdownMenuItem(
+                    value: 28,
+                    child: Text("28℃"),
                   ),
                 ],
                 onChanged: (value) {
@@ -208,6 +234,7 @@ class _StatementState extends State<Statement> {
           child: const Text(
             "开关:",
             style: TextStyle(
+              color: Color.fromARGB(255, 74, 143, 200),
               fontWeight: FontWeight.bold,
               fontSize: 25,
             ),
@@ -218,6 +245,8 @@ class _StatementState extends State<Statement> {
           child: Transform.scale(
             scale: 2.0,
             child: Switch(
+              activeColor: Color.fromARGB(255, 67, 136, 193),
+              activeTrackColor: Color.fromARGB(255, 99, 177, 240),
                 value: flag,
                 onChanged: ((value) {
                   setState(() {
@@ -240,7 +269,7 @@ void GetStatement() async {
   var httpClient = new HttpClient();
   //2.构造Uri
   var request = await httpClient
-      .getUrl(Uri.parse("http://81.68.216.118:9090/api/get/airset/"));
+      .getUrl(Uri.parse("http://81.68.216.118:9094/api/get/airset/"));
   //3.关闭请求，等待响应
   var response = await request.close();
   //4.进行解码，获取数据
@@ -271,7 +300,7 @@ void PostStatement(index) async {
   //     queryParameters: {'temp':26});
   // var uri2=Uri.https('www.wanandroid.com', '/user/login',{'username': 'wanandroidUser1', 'password': '123456'});
   HttpClientRequest request = await httpClient
-      .postUrl(Uri.parse("http://81.68.216.118:9090/api/post/airset/$s"));
+      .postUrl(Uri.parse("http://81.68.216.118:9094/api/post/airset/$s"));
   HttpClientResponse response = await request.close();
   if (response.statusCode == 200) {
     String responseBody = await response.transform(utf8.decoder).join();
