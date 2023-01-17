@@ -10,14 +10,14 @@ import 'package:flutter_application_1/tabs/setTime.dart'; //解码和编码JSON
 
 // gettime();
 
-class SaturdayPage extends StatefulWidget {
-  const SaturdayPage({super.key});
+class SundayPage extends StatefulWidget {
+  const SundayPage({super.key});
 
   @override
-  State<SaturdayPage> createState() => _SaturdayPageState();
+  State<SundayPage> createState() => _SundayPageState();
 }
 
-class _SaturdayPageState extends State<SaturdayPage> {
+class _SundayPageState extends State<SundayPage> {
   int _count = 0;
   List<double> _sliderValue01 = [0];
   List<double> _sliderValue02 = [0];
@@ -76,7 +76,7 @@ class _SaturdayPageState extends State<SaturdayPage> {
           },
         ),
         title: const Text(
-          "设置周六时间",
+          "设置周日时间",
           style: TextStyle(
               color: Colors.blue,
               fontFamily: "STKaiti",
