@@ -33,7 +33,7 @@ class _SetTimeState extends State<SetTime> {
     "周四",
     "周五",
     "周六",
-    "周天",
+    "周日",
   ];
   @override
   Widget build(BuildContext context) {
