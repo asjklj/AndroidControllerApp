@@ -24,11 +24,10 @@ import 'package:flutter/material.dart';
 import './tabs/tabs.dart';
 import './route/MondayPage.dart';
 import './route/TuesdayPage.dart';
-import './route/WenesdayPage.dart';
+import './route/WednesdayPage.dart';
 import './route/ThursdayPag.dart';
 import './route/FridayPage.dart';
-import './route/SaterdayPage.dart';
-import './route/SaterdayPage.dart';
+import './route/SaturdayPage.dart';
 import 'route/SundayPage.dart';
 
 void main() {
@@ -110,10 +109,10 @@ class MyApp extends StatelessWidget {
         // "/Tab": (context) => const Tabs(),
         "Monday": (context) => const MondayPage(),
         "Tuesday": (context) => const TuesdayPage(),
-        "Wenesday": (context) => const WenesdayPage(),
+        "Wednesday": (context) => const WednesdayPage(),
         "Thursday": (context) => const ThursdayPage(),
         "Friday": (context) => const FridayPage(),
-        "Saterday": (context) => const SaterdayPage(),
+        "Saturday": (context) => const SaturdayPage(),
         "Sunday": (context) => const SundayPage(),
       },
       home: const Tabs(),
