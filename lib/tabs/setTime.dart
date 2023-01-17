@@ -20,21 +20,29 @@ class _SetTimeState extends State<SetTime> {
   List weekday = [
     "Monday",
     "Tuesday",
-    "Wenesday",
+    "Wednesday",
     "Thursday",
     "Friday",
-    "Saterday",
+    "Saturday",
     "Sunday"
   ];
-
+List WeekDay=[
+"周一",
+"周二",
+"周三",
+"周四",
+"周五",
+"周六",
+"周天",
+];
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
         itemCount: 7,
         itemBuilder: (context, i) {
           return ListTile(
-            title: Text(weekday[i]),
-            trailing: const Icon(Icons.keyboard_arrow_right),
+            title: Text(WeekDay[i],style: TextStyle(color: Color.fromARGB(255, 74, 120, 159),fontSize: 18),),
+            trailing: const Icon(Icons.keyboard_arrow_right,color: Color.fromARGB(255, 2, 103, 186),),
             onTap: () {
               Navigator.pushNamed(context, weekday[i]); // do something
             },
